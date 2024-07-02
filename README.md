@@ -41,24 +41,25 @@ Attempts to load the pre-trained classifier model from a pickle file.
 
 3) Defining the Prediction Function
 Defines a function to make predictions using the loaded model.
-def predict_note_authentication(variance,skewness,curtosis,entropy):
-prediction=classifier.predict([[variance,skewness,curtosis,entropy]])
-print(prediction)
-return prediction
+    - def predict_note_authentication(variance,skewness,curtosis,entropy):
+       - prediction=classifier.predict([[variance,skewness,curtosis,entropy]])
+       - print(prediction)
+       - return prediction
 
 #### Main Function to Run the Streamlit App
+
 - Title and Header: Sets the title and header of the app with custom HTML using st.markdown to embed HTML.
 - User Inputs: Creates text input fields for the user to input the four features using st.text_input.
 - Prediction Button: When clicked, converts inputs to float, calls the prediction function, and displays the result using st.button and st.success.
 - About Button: Displays additional information about the app using st.button and st.text.
 
   
-    def main():
-        st.title("Bank Authenticator")
-        html_temp = """
-        <div style="background-color:tomato;padding:10px">
-        <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
-        </div>
+        def main():
+            st.title("Bank Authenticator")
+            html_temp = """
+            <div style="background-color:tomato;padding:10px">
+            <h2 style="color:white;text-align:center;">Streamlit Bank Authenticator ML App </h2>
+            </div>
         """
 
         # User inputs for the features

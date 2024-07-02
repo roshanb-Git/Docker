@@ -35,8 +35,8 @@ Imports necessary libraries for numerical operations, model loading, data handli
 
 2) Loading the Pre-trained Model
 Attempts to load the pre-trained classifier model from a pickle file.
-    pickle_in = open("classifier.pkl","rb")
-    classifier=pickle.load(pickle_in)
+    - pickle_in = open("classifier.pkl","rb")
+    - classifier=pickle.load(pickle_in)
  
 
 3) Defining the Prediction Function

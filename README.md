@@ -1,5 +1,8 @@
 # Streamlit Banknote Authenticator Documentation
 
+![app_streamlit](https://github.com/roshanb-Git/Docker/assets/109347375/c1340ea1-4306-4b3d-b5a7-3ce32540ab9e)
+
+
 ## Overview
 - This application is a Streamlit-based web app that uses a pre-trained machine learning model to predict the authenticity of banknotes based on four features: variance, skewness, curtosis, and entropy.
 

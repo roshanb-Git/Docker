@@ -24,7 +24,7 @@
 
 ## Script Breakdown
 
-#### Importing Libraries
+1) Importing Libraries
 Imports necessary libraries for numerical operations, model loading, data handling, web app creation, and image processing.
     - import numpy as np
     - import pickle
@@ -33,18 +33,18 @@ Imports necessary libraries for numerical operations, model loading, data handli
     - from PIL import Image
 
 
-#### Loading the Pre-trained Model
+2) Loading the Pre-trained Model
 Attempts to load the pre-trained classifier model from a pickle file.
     pickle_in = open("classifier.pkl","rb")
     classifier=pickle.load(pickle_in)
  
 
-#### Defining the Prediction Function
+3) Defining the Prediction Function
 Defines a function to make predictions using the loaded model.
-    def predict_note_authentication(variance,skewness,curtosis,entropy):
-        prediction=classifier.predict([[variance,skewness,curtosis,entropy]])
-        print(prediction)
-        return prediction
+def predict_note_authentication(variance,skewness,curtosis,entropy):
+prediction=classifier.predict([[variance,skewness,curtosis,entropy]])
+print(prediction)
+return prediction
 
 #### Main Function to Run the Streamlit App
 - Title and Header: Sets the title and header of the app with custom HTML using st.markdown to embed HTML.

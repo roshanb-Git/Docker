@@ -98,10 +98,10 @@ def main():
 if __name__ == '__main__':
     main()
 
-Title and Header: Sets the title and header of the app with custom HTML using st.markdown to embed HTML.
-User Inputs: Creates text input fields for the user to input the four features using st.text_input.
-Prediction Button: When clicked, converts inputs to float, calls the prediction function, and displays the result using st.button and st.success.
-About Button: Displays additional information about the app using st.button and st.text.
+- Title and Header: Sets the title and header of the app with custom HTML using st.markdown to embed HTML.
+- User Inputs: Creates text input fields for the user to input the four features using st.text_input.
+- Prediction Button: When clicked, converts inputs to float, calls the prediction function, and displays the result using st.button and st.success.
+- About Button: Displays additional information about the app using st.button and st.text.
 
 Running the App
 python
